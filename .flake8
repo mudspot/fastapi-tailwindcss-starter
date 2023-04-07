@@ -1,0 +1,28 @@
+[flake8]
+extend-exclude =
+    .git,
+    __pycache__,
+    docs/source/conf.py,
+    old,
+    build,
+    dist,
+    .venv,
+    venv,
+    ./app/modules/clients/sidecar,
+    ./app/modules/clients/vdr
+
+extend-ignore = E203, E266, E501, W605, W503
+
+per-file-ignores =
+    */__init__.py: F401
+
+# Black's default line length.
+max-line-length = 120
+
+max-complexity = 18
+
+# Specify the list of error codes you wish Flake8 to report.
+select = B,C,E,F,W,T4,B9
+
+# Parallelism
+jobs = 4

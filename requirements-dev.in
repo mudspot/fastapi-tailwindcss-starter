@@ -1,0 +1,12 @@
+black
+isort
+flake8
+mypy
+pytest
+pytest-asyncio
+
+requests
+httpx
+asgi-lifespan
+
+faker

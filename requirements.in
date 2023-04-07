@@ -1,0 +1,21 @@
+bcrypt
+fastapi
+passlib
+pyjwt
+python-multipart
+uvicorn
+
+# db
+asyncpg
+psycopg2-binary
+alembic
+
+# fastapi-users
+fastapi-users[sqlalchemy]
+
+loguru
+
+pyhumps
+requests
+
+jinja2
