@@ -13,7 +13,11 @@ templates: Jinja2Templates = global_state.templates
 
 @router.get("", response_class=HTMLResponse)
 async def root(request: Request):
-    return templates.TemplateResponse("login.html", {"request": request})
+    return templates.TemplateResponse("login.html", {"request": request, "layout": "full_screen"})
+
+@router.get("home", response_class=HTMLResponse)
+async def home(request: Request):
+    return templates.TemplateResponse("home.html", {"request": request, "layout": "vertical"})
 
 @router.get("messages", response_class=HTMLResponse)
 async def messages(request: Request):
