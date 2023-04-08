@@ -1,0 +1,8 @@
+{# templates/index.html #}
+
+{% extends "layout/{}_layout.html.j2".format(layout) %}
+{% block content %}
+    <section class="bg-gray-50 dark:bg-gray-900 dark:text-white">
+        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+    </section>
+{% endblock content %}

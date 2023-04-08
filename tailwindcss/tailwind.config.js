@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["../app/templates/**/*.html", './node_modules/flowbite/**/*.js'],
+  content: ["../app/templates/**/*.html", "../app/templates/**/*.html.j2", './node_modules/flowbite/**/*.js'],
   darkMode: 'media',
   theme: {
     extend: {
