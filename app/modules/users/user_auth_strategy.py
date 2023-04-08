@@ -6,7 +6,7 @@ from fastapi_users.jwt import generate_jwt
 class UserAuthStrategy(JWTStrategy):
     async def write_token(self, user: models.UP) -> str:
         data = {
-            "user_id": str(user.id),
+            "sub": str(user.id),
             "aud": self.token_audience,
             "role": user.role_type,
         }
